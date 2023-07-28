@@ -42,13 +42,13 @@ setup(
     name="dvc-ML-demo-AIOps",
     version="0.0.1",
     author="USER_NAME",
-    description="A small package for dvc ml pipeline demo",
+    description="A package for Sales prediction using ML and dvc for retraining",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/user_name/dvc-ML-demo-AIOps",
+    url="https://github.com/AAZZIOUI/Sales_Forecast",
     author_email="user_name@gmail.com",
     packages=["src"],
-    python_requires=">=3.7",
+    python_requires=">=3.6",
     install_requires=[
         'dvc',
         'pandas',
@@ -73,7 +73,7 @@ mkdir -p src/utils config
 ```
 all_utils.py: will have all the files that are required.
 
-### create the config file
+### create config.yaml file
 ```bash
 touch config/config.yaml
 ```
@@ -85,3 +85,10 @@ config.yaml :  will be used and accessed by all files that need data. All data w
 ### create artifacts folder
 This is where we will be storing all kinds of data: Raw, Processed, Validated, Archived ...etc.
 
+### create dvc.yaml file
+This is where we will be adding dvc stages (DAG)
+
+### create params.yaml file
+This file is responsible for all training parameters: seed, test size, hyperparams...etc
+
+## STEP 3: Data validation:
