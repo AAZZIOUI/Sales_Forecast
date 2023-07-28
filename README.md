@@ -26,7 +26,7 @@ In the local active directory of the repository:
   - conda create --prefix ./env python=3.6 -y
   - conda activate env/
 ```
-## STEP 2: inializations:
+## STEP 2: Inializations:
 ### create a setup file
 ```bash
 touch setup.py
@@ -57,9 +57,31 @@ setup(
     ]
 )
 ```
-### Create requirement file and install dependencies
+### Create requirements file and install dependencies
 ```bash
 touch requirements.txt
 pip install -r requirements.txt
 ```
+### Initialize dvc
+```bash
+dvc init
+```
+
+### create the basic directory structure
+```bash
+mkdir -p src/utils config
+```
+all_utils.py: will have all the files that are required.
+
+### create the config file
+```bash
+touch config/config.yaml
+```
+config.yaml :  will be used and accessed by all files that need data. All data will be configured here so that if we change anything related to data, we will have to change it only in this file.
+
+### create __init__.py files
+ src folder is going to be treated as a package.
+
+### create artifacts folder
+This is where we will be storing all kinds of data: Raw, Processed, Validated, Archived ...etc.
 
