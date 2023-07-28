@@ -1,0 +1,12 @@
+dvc
+numpy
+pandas
+scikit-learn
+Flask
+Flask-Cors
+Flask-MonitoringDashboard
+jsonschema
+matplotlib
+python-dateutil
+PyYAML
+regexp
