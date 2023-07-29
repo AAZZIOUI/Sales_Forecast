@@ -1,0 +1,5 @@
+artifacts:
+  artifacts_dir: artifacts
+
+training_source_raw_data_path: 
+  - ../Training_Batch_Files
